@@ -1,113 +1,197 @@
 <?php
+$karenmed_footer_column1=get_field('karenmed_footer_column1','option');
+$karenmed_footer_column2=get_field('karenmed_footer_column2','option');
+$karenmed_footer_column3=get_field('karenmed_footer_column3','option');
+$karenmed_footer_column4=get_field('karenmed_footer_column4','option');
 /**
+
  * The template for displaying the footer
+
  *
+
  * Contains the closing of the #content div and all content after.
+
  *
+
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+
  *
+
  * @package karenclinic
+
  */
+
+
 
 ?>
 
+
+
 	<footer id="colophon" class="site-footer">
+
 		<div class="mainFooterBack">
+
 			<div class="mainFooter sectionPadding mainView">
+
 				<div class="calssFooterColumn1 calssFooterColumn">
+
 					<div class="elementorImg">
-						<a href="#" class="desctopLogoPart">
-							<svg id="a" xmlns="http://www.w3.org/2000/svg"  width="100" height="80" viewBox="0 0 100 80"><defs><style>.b{fill:#fff}.c{fill:#e3b077}</style></defs><path class="b" d="M77.74 40.94h-8.72l-1.69-4.24-6.08 11.16-4.39-11.48-2.4 4.39h-5.1v24.55h15.19V48.95L80.6 65.32h19.41L77.75 40.94Z"/><path class="c" d="m73.67 36.47 24.64-21.79H78.88l-11.57 8.76h-2.59v-8.76H49.36v23.74h3.62l4.22-7.43 4.39 11.31 5.91-11.16 3.21 7.43h4.88l-1.93-2.1Z"/><path class="b" d="M21.27 33.42c0 1.44-.3 2.46-.88 3.06-.58.6-1.52.9-2.87.9h-1.09V41h1.09c2.46 0 4.5-.88 5.63-2.19 1.14-1.31 1.71-3.11 1.71-5.4v-5.93h-3.6v5.93Zm19.48-6.92c-1.14-1.2-2.04-2.12-2.66-2.74l7.22-3.21-1.5-3.3-9.64 4.39-.43 3.02h.09l.06.06s.09.06.11.11l.32.3.47.43c.94.92 2.04 2.04 3.32 3.41.47.48.9 1.01 1.29 1.56l.28.47.13.3c-.24.13-.9.17-2.06.17h-6.23c-.47 0-.79-.06-.94-.24s-.24-.47-.24-.92v-11.1h-3.6v11.1c-.02.75.13 1.5.43 2.19.2.48.49.92.86 1.29.36.38.8.68 1.29.88.7.29 1.45.44 2.21.43h6.23c1.03.03 2.05-.13 3.02-.47a4.34 4.34 0 0 0 1.48-.94c.29-.31.52-.66.69-1.05.18-.41.28-.86.28-1.31v-.09c-.02-.63-.16-1.25-.41-1.82-.41-.9-.92-1.71-2.06-2.91Zm-29.93.13L8.48 24.3l-2.29 2.31 2.29 2.34 2.34-2.32z"/><path class="b" d="M12.28 34.34c0 1.09-.13 1.76-.62 2.27s-1.44.77-2.81.77H7.2l-.73-.04c-.28-.04-.56-.1-.84-.19-.62-.17-1.15-.56-1.5-1.09-.35-.58-.52-1.25-.49-1.93v-.39c.06-1.24.49-2.7 1.26-4.37l-3.28-1.5c-.96 2.08-1.5 3.98-1.59 5.7 0 .17-.02.36-.02.54a7.35 7.35 0 0 0 1.05 3.9 6.14 6.14 0 0 0 2.7 2.29c1.08.48 2.25.73 3.43.71h1.65c1.11.02 2.21-.15 3.26-.51.9-.32 1.71-.86 2.34-1.59.96-1.09 1.44-2.61 1.44-4.56v-6.86h-3.6v6.86Z"/><path class="c" d="M44.6 52.15c-.14-.56-.37-1.09-.69-1.56-.86-1.26-2.29-1.89-4.26-1.89-1.1.01-2.18.29-3.15.81l-.77.45.04-.39v-6.71h-3.6v11.08l-.75 1.2h-8.63c-.51 0-.88-.13-1.07-.36-.17-.29-.26-.62-.26-.96v-2.68h-3.62v3.41c0 .47-.26.73-.79.73h-13c-.2 0-.39-.11-.47-.3-.05-.11-.08-.24-.09-.36 0-.04.02-.11.02-.17.18-1.11.43-2.2.75-3.28l-3.47-.99s-.03.09-.04.13l-.06.26c-.09.28-.15.56-.21.84-.19.64-.33 1.29-.41 1.95-.04.32-.06.64-.06.96 0 .3.02.58.04.84.08.69.32 1.35.71 1.93.58.9 1.53 1.51 2.59 1.65.58.11 1.91.15 3.96.15h6.26c1.89 0 3.21-.04 3.94-.13.84-.06 1.67-.31 2.4-.73.6.49 1.59.73 2.89.73h17.18c.24 0 .49-.04.73-.09.62-.1 1.21-.3 1.76-.6 1.52-.88 2.29-2.4 2.29-4.56 0-.45-.06-.91-.15-1.35Zm-3.23 1.95c-.03.19-.1.36-.21.51-.3.36-.86.54-1.69.54h-4.24c.19-.22.4-.43.62-.62.39-.34.77-.66 1.18-.96 1.14-.84 2.08-1.26 2.83-1.26s1.56.41 1.56 1.22c0 .19-.01.39-.04.58Zm-30.33 6.17 2.34 2.34-2.31 2.31-2.31-2.34 2.29-2.31Z"/></svg>
+
+						<a href="<?php echo $karenmed_footer_column1['logo_link']['url']; ?>" target="<?php echo $karenmed_footer_column1['logo_link']['target']; ?><?php echo $karenmed_footer_column1['logo_link']['title']; ?>" class="desctopLogoPart">
+
+							<?php echo $karenmed_footer_column1['logo'] ?>
+
 						</a>
+
 					</div>
+
 					<div class="elementoriText">
-						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+
+						<p><?php echo $karenmed_footer_column1['text'] ?></p>
+
 					</div>
+
 					<div class="socialMedia">
-						<a href="#">
-							<svg width="28" height="28" viewBox="0 0 0.84 0.84" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M.529.186h.066V.075A.914.914 0 0 0 .499.07c-.095 0-.16.058-.16.165v.092H.231v.125h.107V.77h.129V.451h.107L.59.326H.467V.247c0-.037.01-.061.062-.061Z"/></svg>
+
+						<a href="<?php echo $karenmed_footer_column1['link1']['url']; ?>" target="<?php echo $karenmed_footer_column1['link1']['target']; ?><?php echo $karenmed_footer_column1['link1']['title']; ?>">
+
+							<?php echo $karenmed_footer_column1['svg1'] ?>
+
 						</a>
-						<a href="#">
-							<svg width="28" height="28" viewBox="0 0 0.84 0.84" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M.77.203a.297.297 0 0 1-.083.022A.145.145 0 0 0 .75.146a.287.287 0 0 1-.091.035.143.143 0 0 0-.245.131.407.407 0 0 1-.296-.15.146.146 0 0 0-.019.072.143.143 0 0 0 .064.119.142.142 0 0 1-.065-.018v.002a.143.143 0 0 0 .116.14.138.138 0 0 1-.039.006.172.172 0 0 1-.027-.002.144.144 0 0 0 .134.099.288.288 0 0 1-.177.062A.278.278 0 0 1 .07.64a.405.405 0 0 0 .22.065A.406.406 0 0 0 .7.296V.277A.295.295 0 0 0 .77.203Z"/></svg>
+
+						<a href="<?php echo $karenmed_footer_column1['link2']['url']; ?>" target="<?php echo $karenmed_footer_column1['link2']['target']; ?><?php echo $karenmed_footer_column1['link2']['title']; ?>">
+
+							<?php echo $karenmed_footer_column1['svg2'] ?>
+
 						</a>
-						<a href="#">
-							<svg width="28" height="28" viewBox="-0.07 -0.175 0.84 0.84" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-youtube"><path d="M.553.001H.145A.144.144 0 0 0 0 .144v.202c0 .079.065.143.145.143h.408c.08 0 .145-.064.145-.143V.144A.144.144 0 0 0 .553.001zM.455.255l-.191.09A.008.008 0 0 1 .253.338V.152A.008.008 0 0 1 .264.145l.191.096a.008.008 0 0 1 0 .014z"/></svg>
+
+						<a href="<?php echo $karenmed_footer_column1['link3']['url']; ?>" target="<?php echo $karenmed_footer_column1['link3']['target']; ?><?php echo $karenmed_footer_column1['link3']['title']; ?>">
+
+							<?php echo $karenmed_footer_column1['svg3'] ?>
+
 						</a>
-						<a href="#">
-							<svg width="28" height="28" fill="#fff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32Z"></path><path d="M377.33 162.67a28 28 0 1 1 28-28 27.94 27.94 0 0 1-28 28ZM256 181.33A74.67 74.67 0 1 1 181.33 256 74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112 112 112 0 0 0-112-112Z"></path></svg>
+
+						<a href="<?php echo $karenmed_footer_column1['link4']['url']; ?>" target="<?php echo $karenmed_footer_column1['link4']['target']; ?><?php echo $karenmed_footer_column1['link4']['title']; ?>">
+
+							<?php echo $karenmed_footer_column1['svg4'] ?>
+
 						</a>
+
 					</div>
+
 				</div>
+
 				<div class="calssFooterColumn2 calssFooterColumn">
-					<h3>لورم ایپسوم</h3>
+
+					<h3><?php echo $karenmed_footer_column2['title'] ?></h3>
+
 					<div class="footerLi">
-						<li>
-							<a href="#">لورم ایپسوم</a>
-						</li>
-						<li>
-							<a href="#">لورم ایپسوم</a>
-						</li>
-						<li>
-							<a href="#">لورم ایپسوم</a>
-						</li>
-						<li>
-							<a href="#">لورم ایپسوم</a>
-						</li>
-						<li>
-							<a href="#">لورم ایپسوم</a>
-						</li>
+
+						<?php
+						foreach ($karenmed_footer_column2['item'] as $item) {
+						?>
+							<li>
+
+								<a href="<?php echo $item['link']['url']; ?>" target="<?php echo $item['link']['target']; ?><?php echo $item['link']['title']; ?>"><?php echo $item['text'] ?></a>
+
+							</li>
+						<?php
+						}
+						?>
+
 					</div>
+
 				</div>
+
 				<div class="calssFooterColumn3 calssFooterColumn">
-					<h3>لورم ایپسوم</h3>
+
+					<h3><?php echo $karenmed_footer_column3['title'] ?></h3>
+
 					<div class="footerLi">
-						<li>
-							<a href="#">لورم ایپسوم</a>
-						</li>
-						<li>
-							<a href="#">لورم ایپسوم</a>
-						</li>
-						<li>
-							<a href="#">لورم ایپسوم</a>
-						</li>
-						<li>
-							<a href="#">لورم ایپسوم</a>
-						</li>
-						<li>
-							<a href="#">لورم ایپسوم</a>
-						</li>
+
+					<?php
+						foreach ($karenmed_footer_column3['item'] as $item) {
+						?>
+							<li>
+
+								<a href="<?php echo $item['link']['url']; ?>" target="<?php echo $item['link']['target']; ?><?php echo $item['link']['title']; ?>"><?php echo $item['text'] ?></a>
+
+							</li>
+					<?php
+					}
+					?>
+
 					</div>
+
 				</div>
+
 				<div class="calssFooterColumn4 calssFooterColumn">
-					<h3>لورم ایپسوم</h3>
+
+					<h3><?php echo $karenmed_footer_column4['title'] ?></h3>
+
 					<div class="workTime">
-						<div class="workTimeSvg">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 204.8 204.8"><path d="M102.4 25.6a76.8 76.8 0 1 0 76.8 76.8 76.888 76.888 0 0 0-76.8-76.8Zm0 140.8a64 64 0 1 1 64-64 64.072 64.072 0 0 1-64 64ZM49.328 23.728l-25.6 25.6a6.4 6.4 0 0 1-9.056-9.056l25.6-25.6a6.4 6.4 0 1 1 9.056 9.056Zm140.8 25.6a6.4 6.4 0 0 1-9.056 0l-25.6-25.6a6.4 6.4 0 0 1 9.056-9.056l25.6 25.6a6.4 6.4 0 0 1 0 9.056ZM147.2 96a6.4 6.4 0 0 1 0 12.8h-44.8a6.4 6.4 0 0 1-6.4-6.4V57.6a6.4 6.4 0 0 1 12.8 0V96Z"/></svg>
+
+						<div class="svg">
+
+							<?php echo $karenmed_footer_column4['time_svg'] ?>
+
 						</div>
-						<p>9 صبح تا 10 شب - شنبه تا پنجشنبه</p>
+						<p><?php echo $karenmed_footer_column4['time'] ?></p>
+
 					</div>
-					<div class="callUs">
+					<div class="address">
+						<div class="svg">
+						<?php echo $karenmed_footer_column4['location_svg'] ?>
+						</div>
+						<p><?php echo $karenmed_footer_column4['location'] ?></p>
+					</div>
+
+					<a href="tel://<?php echo $karenmed_footer_column4['phone'] ?>" class="callUs">
 						<div class="callUsSvg">
-							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" viewBox="0 0 256 256"><path d="m222.37 158.46-47.11-21.11-.13-.06a16 16 0 0 0-15.17 1.4 8.12 8.12 0 0 0-.75.56L134.87 160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16 16 0 0 0 1.32-15.06v-.12L97.54 33.64a16 16 0 0 0-16.62-9.52A56.26 56.26 0 0 0 32 80c0 79.4 64.6 144 144 144a56.26 56.26 0 0 0 55.88-48.92 16 16 0 0 0-9.51-16.62ZM176 208A128.14 128.14 0 0 1 48 80a40.2 40.2 0 0 1 34.87-40 .61.61 0 0 0 0 .12l21 47-20.67 24.74a6.13 6.13 0 0 0-.57.77 16 16 0 0 0-1 15.7c9.06 18.53 27.73 37.06 46.46 46.11a16 16 0 0 0 15.75-1.14 8.44 8.44 0 0 0 .74-.56L168.89 152l47 21.05h.11A40.21 40.21 0 0 1 176 208Z"></path></svg>
+
+							<?php echo $karenmed_footer_column4['phone_svg'] ?>
+
+							</div>
+
+							<div class="callUsText">
+
+							<h4><?php echo $karenmed_footer_column4['text'] ?></h4>
+
+							<p><?php echo $karenmed_footer_column4['phone'] ?></p>
+
 						</div>
-						<div class="callUsText">
-							<h4>امروز با ما تماس بگیرید</h4>
-							<p>09121111111</p>
-						</div>
-					</div>
+					</a>
+
+
 				</div>
+
 			</div>
+
 			<div class="copyRightFooterBack">
+
 				<div class="copyRightFooter mainView">
+
 					<p class="copyRightP1 noMargin">کلیه حقوق وبسایت برای کلینیک کارن طب محفوظ است. طراحی و توسعه توسط <a href="https://idechy.ir/" target="_blank">ایده‌چی</a></p>
+
 					<p class="copyRightP2 noMargin">کلینیک کارن طب ، بهترین در خاورمیانه</p>
+
 				</div>
+
 			</div>
+
 		</div>
+
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
+
+
 
 <?php wp_footer(); ?>
 
+
+
 </body>
+
 </html>
+

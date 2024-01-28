@@ -399,7 +399,6 @@ textarea {
   border: none;
   color: #2e2e2e;
   font-size: 14px;
-  margin-right: -15px;
 }
 textarea::-webkit-input-placeholder {
   color: #373c60;

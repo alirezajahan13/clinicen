@@ -25,32 +25,32 @@ get_header();
     <div class="contactPage mainView">
         <div class="mainContactUs">
             <div class="mainContactUsText">
-                <h2>هدینگ دو</h2>
-                <h1>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </h1>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه</p>
+                <h2><?php echo get_field('top_title') ?></h2>
+                <h1><?php echo get_field('title') ?></h1>
+                <p><?php echo get_field('bottom_title') ?></p>
                 <div class="information">
                     <div class="columnInformation">
                         <div class="informationSvg">
-                            <svg fill="#ddcd76" width="70" height="70" stroke="#ddcd76" stroke-width="5px" viewBox="0 0 512 512"><path d="M393.2 42h-40.3a41.6 41.6 0 0 0-40.4-32h-113a41.6 41.6 0 0 0-40.4 32h-40.3a56.4 56.4 0 0 0-56.3 56.3v339.4a56.4 56.4 0 0 0 56.3 56.3h274.4a56.4 56.4 0 0 0 56.3-56.3V98.3A56.4 56.4 0 0 0 393.2 42Zm-217.4 0a25.6 25.6 0 0 1 23.7-16h113a25.6 25.6 0 0 1 23.7 16 26.8 26.8 0 0 1 1.8 9.5 27.5 27.5 0 0 1-.8 6.5 25.6 25.6 0 0 1-24.7 19h-113a25.6 25.6 0 0 1-24.7-19 27.5 27.5 0 0 1-.8-6.5 26.8 26.8 0 0 1 1.8-9.5Zm257.7 395.7a40.4 40.4 0 0 1-40.3 40.3H118.8a40.4 40.4 0 0 1-40.3-40.3V98.3A40.4 40.4 0 0 1 118.8 58h39.7a41.5 41.5 0 0 0 41 35h113a41.5 41.5 0 0 0 41-35h39.7a40.4 40.4 0 0 1 40.3 40.3Z"></path><path d="M211.7 193h17.8v17.8a13.2 13.2 0 0 0 13.2 13.2h26.6a13.2 13.2 0 0 0 13.2-13.2V193h17.8a13.2 13.2 0 0 0 13.2-13.2v-26.6a13.2 13.2 0 0 0-13.2-13.2h-17.8v-17.8a13.2 13.2 0 0 0-13.2-13.2h-26.6a13.2 13.2 0 0 0-13.2 13.2V140h-17.8a13.2 13.2 0 0 0-13.2 13.2v26.6a13.2 13.2 0 0 0 13.2 13.2Zm2.8-37h31v-31h21v31h31v21h-31v31h-21v-31h-31ZM368 250H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Zm0 71H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Zm0 71H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Z"></path></svg>
+                        <?php echo get_field('right_box')['svg'] ?>
                         </div>
-                        <h2>هدینگ دو</h2>
-                        <span>لورم ایپسوم متن ساختگی</span>
-                        <span>لورم ایپسوم متن ساختگی</span>
-                        <span>لورم ایپسوم متن ساختگی</span>
+                        <h2><?php echo get_field('right_box')['title'] ?></h2>
+                        <span><?php echo get_field('right_box')['text1'] ?></span>
+                        <span><?php echo get_field('right_box')['text2'] ?></span>
+                        <span><?php echo get_field('right_box')['text3'] ?></span>
                     </div>
                     <div class="columnInformation">
                         <div class="informationSvg">
-                            <svg fill="#ddcd76" width="70" height="70" stroke="#ddcd76" stroke-width="5px" viewBox="0 0 512 512"><path d="M393.2 42h-40.3a41.6 41.6 0 0 0-40.4-32h-113a41.6 41.6 0 0 0-40.4 32h-40.3a56.4 56.4 0 0 0-56.3 56.3v339.4a56.4 56.4 0 0 0 56.3 56.3h274.4a56.4 56.4 0 0 0 56.3-56.3V98.3A56.4 56.4 0 0 0 393.2 42Zm-217.4 0a25.6 25.6 0 0 1 23.7-16h113a25.6 25.6 0 0 1 23.7 16 26.8 26.8 0 0 1 1.8 9.5 27.5 27.5 0 0 1-.8 6.5 25.6 25.6 0 0 1-24.7 19h-113a25.6 25.6 0 0 1-24.7-19 27.5 27.5 0 0 1-.8-6.5 26.8 26.8 0 0 1 1.8-9.5Zm257.7 395.7a40.4 40.4 0 0 1-40.3 40.3H118.8a40.4 40.4 0 0 1-40.3-40.3V98.3A40.4 40.4 0 0 1 118.8 58h39.7a41.5 41.5 0 0 0 41 35h113a41.5 41.5 0 0 0 41-35h39.7a40.4 40.4 0 0 1 40.3 40.3Z"></path><path d="M211.7 193h17.8v17.8a13.2 13.2 0 0 0 13.2 13.2h26.6a13.2 13.2 0 0 0 13.2-13.2V193h17.8a13.2 13.2 0 0 0 13.2-13.2v-26.6a13.2 13.2 0 0 0-13.2-13.2h-17.8v-17.8a13.2 13.2 0 0 0-13.2-13.2h-26.6a13.2 13.2 0 0 0-13.2 13.2V140h-17.8a13.2 13.2 0 0 0-13.2 13.2v26.6a13.2 13.2 0 0 0 13.2 13.2Zm2.8-37h31v-31h21v31h31v21h-31v31h-21v-31h-31ZM368 250H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Zm0 71H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Zm0 71H139a8 8 0 0 0 0 16h229a8 8 0 0 0 0-16Z"></path></svg>
+                        <?php echo get_field('left_box')['svg'] ?>
                         </div>
-                        <h2>هدینگ دو</h2>
-                        <span>لورم ایپسوم متن ساختگی</span>
-                        <span>لورم ایپسوم متن ساختگی</span>
-                        <span>لورم ایپسوم متن ساختگی</span>
+                        <h2><?php echo get_field('left_box')['title'] ?></h2>
+                        <span><?php echo get_field('left_box')['text1'] ?></span>
+                        <span><?php echo get_field('left_box')['text2'] ?></span>
+                        <span><?php echo get_field('left_box')['text3'] ?></span>
                     </div>
                 </div>
             </div>
             <div class="mainContactUsForm">
-                <?php echo do_shortcode('[contact-form-7 id="0f3a098" title="بدون عنوان"]') ?>
+                <?php echo do_shortcode('[contact-form-7 id="de155b4" title="فرم تماس با ما"]') ?>
             </div>
         </div>
     </div>
