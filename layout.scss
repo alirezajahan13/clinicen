@@ -1,0 +1,243 @@
+@import 'sass/variables';
+@import 'sass/breakpoints';
+@import 'sass/source';
+
+.servicesPageBack{
+    .servicesDetailsSec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .imageBox{
+            width: 35%;
+            @include sm{
+                width: 100%;
+                order: 2;
+            }
+        }
+        .detailBox{
+            width: 60%;
+            @include sm{
+                width: 100%;
+                order: 1;
+            }
+        }
+    }
+    .counterNumbers{
+        background-color: #484749;
+        padding: 30px 0px;
+        .counterNumbersInner{
+            display: flex;
+            justify-content: space-around;
+            .counterItemParent{
+                width: 12%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                cursor: pointer;
+                text-align: center;
+                @include sm{
+                    width: 20%;
+                }
+                @include xs{
+                    width: 30% !important;
+                }
+                &:hover{
+                    .counterItem{
+                        transform: scale(0.9);
+                        background-color: #676767;
+                        color: #ddcd76;
+                    }
+                }
+                .counterItem{
+                    background-color: #ddcd76;
+                    border-radius: 100%;
+                    transition: 0.3s;
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    @include sm{
+                        font-size: 22px;
+                        height: 80px;
+                        width: 80px;
+                    }
+                }
+                .counterTitle{
+                    color: #fff;
+                    @include xs{
+                        font-size: 16.5px;
+                    }
+                }
+            }
+        }
+    }
+    .servicesEntryContent{
+        p{
+            text-align: justify;
+        }
+        img{
+            display: block;
+            width: 50%;
+            margin: auto;
+        }
+        .servicesEntryContentHeader{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .servicesEntryContentTitle{
+                width: 30%;
+                @include sm{
+                    width: auto;
+                }
+                .topHeading{
+                    color: #e3b077;
+                    font-size: 14.5px;
+                    display: block;
+                    font-weight: 400;
+                }
+                h2{
+                    margin: 0;
+                    font-size: 20px;
+                    line-height: 50px;
+                }
+                .servicesEntryContentHeaderCount{
+                    display: flex;
+                    gap: 10px;
+                    @include sm{
+                        width: auto;
+                        font-size: 12px;
+                    }
+                    .commentsCount , .viewPageCount{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        opacity: 0.7;
+                        font-size: 13px;
+                        .commentsCountText , .viewCountText{
+                            margin: 0px 5px;
+                        }
+                    }
+                }
+            }
+            .servicesEntryContentHeaderInnerBtn{
+                width: 20%;
+                margin-right: auto;
+                a{
+                    margin-right: auto;
+                }
+                @include sm{
+                    width: auto;
+                }
+            }
+        }
+    }
+    .servicesFormSection{
+        .servicesFormSectionInner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: #fff;
+            box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+            position: relative;
+            border-radius: 20px;
+            padding: 30px;
+            &::after{
+                position: absolute;
+                content: "";
+                background-image: url(img/pattern.jpeg);
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: 0.1;
+                z-index: 999;
+            }
+            .formSection{
+                width: 40%;
+                z-index: 9991;
+                @include sm{
+                    width: 100%;
+                }
+            }
+            .imgSection{
+                width: 45%;
+                @include sm{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    img{
+        border-radius: 25px;
+        @include sm{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .entryContentTitle{
+        font-size: 26px;
+        margin: 0;
+    }
+    .commentInner{
+        width: 100%;
+        .comment-list{
+            box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+        }
+        .comment-respond{
+            input{
+                margin-right: 0 !important;
+            }
+            .comment-form-url{
+                display: none;
+            }
+        }
+    }
+}
+.mainFooterBack{
+    .calssFooterColumn{
+        li{
+            a{
+                color: #fff;
+            }
+        }
+    }
+    .copyRightFooterBack{
+        p{
+            color: #A3A2AF;
+            text-align: center;
+            a{
+                color: #e3b077;
+            }
+        }
+        .copyRightFooter{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-top: 1px solid $offColor;
+            padding: 15px 0px;
+            margin-top: 15px;
+            font-size: 13px;
+            @include sm{
+                justify-content: space-between;
+                font-size: 12px;
+                gap: 10px;
+                .copyRightP1{
+                    order: 2;
+                }
+                p{
+                    margin: auto;
+                }
+            }
+            @include xs{
+                justify-content: center !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,1069 @@
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-Hairline.woff2");
+  font-weight: 50;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-Thin.woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-UltraLight.woff2");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-Light.woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-Medium.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-DemiBold.woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-Bold.woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-ExtraBold.woff2");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-Black.woff2");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-ExtraBlack.woff2");
+  font-weight: 910;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-Heavy.woff2");
+  font-weight: 950;
+}
+@font-face {
+  font-family: "danaweb";
+  src: url("fonts/danafn/DanaFaNum-fat.woff2");
+  font-weight: 990;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.blogBreadCrumbs a, .blogBreadCrumbs span {
+  font-size: 18px;
+  position: relative;
+  z-index: 3;
+  color: white !important;
+}
+.blogBreadCrumbs span {
+  margin: 7px;
+}
+
+.contactPageBack iframe {
+  width: 100%;
+  height: 410px;
+}
+.contactPageBack .mainView {
+  max-width: 1290px;
+  margin: auto;
+}
+.contactPageBack .mainContactUs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+}
+.contactPageBack .mainContactUs .mainContactUsText {
+  padding: 70px 10px 10px 50px;
+  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  .contactPageBack .mainContactUs .mainContactUsText {
+    width: 100% !important;
+    padding: 70px 10px 10px 10px;
+  }
+}
+.contactPageBack .mainContactUs .mainContactUsText h2 {
+  color: #e3b077;
+  font-size: 18px;
+  font-weight: 300;
+}
+.contactPageBack .mainContactUs .mainContactUsText p {
+  color: #676767;
+  font-size: 16px;
+}
+.contactPageBack .mainContactUs .mainContactUsText h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information .columnInformation {
+  width: 50%;
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .contactPageBack .mainContactUs .mainContactUsText .information .columnInformation {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contactPageBack .mainContactUs .mainContactUsText .information .columnInformation {
+    width: 80%;
+    text-align: center;
+  }
+}
+.contactPageBack .mainContactUs .mainContactUsText .information h2 {
+  color: #2e2e2e;
+  font-weight: 700;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information span {
+  color: #676767;
+}
+@media screen and (max-width: 768px) {
+  .contactPageBack .mainContactUs .mainContactUsText .information .informationSvg {
+    display: flex;
+    justify-content: center;
+  }
+}
+.contactPageBack .mainContactUs .mainContactUsText .information .informationSvg svg {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e3b077;
+  fill: white;
+  display: block;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information span {
+  display: inline-block;
+  position: relative;
+  padding-right: 30px;
+  margin: 5px 0;
+}
+.contactPageBack .mainContactUs .mainContactUsText .information span::before {
+  content: "";
+  position: absolute;
+  width: 12PX;
+  height: 12px;
+  top: 50%;
+  border-radius: 100%;
+  transform: translateY(-50%);
+  right: 0;
+  background-color: #e3b077;
+}
+.contactPageBack .mainContactUs .mainContactUsForm {
+  width: 49%;
+  padding: 50px 50px 10px 50px;
+  margin: -100px 20px 0 0;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 3px 30px 0px rgba(24, 22, 43, 0.14);
+}
+@media screen and (max-width: 768px) {
+  .contactPageBack .mainContactUs .mainContactUsForm {
+    width: 100% !important;
+    margin: 50px 0 0 0;
+  }
+}
+.contactPageBack .mainContactUs .mainContactUsForm input[type=email] {
+  direction: rtl;
+}
+.contactPageBack .mainContactUs .mainContactUsForm input[type=submit] {
+  margin-top: 40px;
+  width: 40%;
+  font-size: 18px;
+}
+.blogHeader {
+  background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/enlarging-lips-at-cosmetic-clinic-e1632845241540.jpg);
+  background-position: 0px 52%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  .blogHeader {
+    padding: 80px 0;
+  }
+}
+.blogHeader a {
+  color: inherit;
+}
+.blogHeader .innerHeader {
+  max-width: 1290px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  color: white;
+  z-index: 100;
+}
+.blogHeader .innerHeader .archivePostFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogHeader .innerHeader .archivePostFooter .innerArchive {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.blogHeader .innerHeader .archivePostFooter .innerArchive span {
+  color: #A3A2AF;
+}
+.blogHeader .innerHeader .archivePostFooter .archivePostSvg svg {
+  vertical-align: middle;
+  margin-left: 7px;
+  fill: #e3b077;
+}
+.blogHeader .backgroundOverlay {
+  background-color: #18162B;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.blogHeader .blogHeaderText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogHeader .blogHeaderText h1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 36px;
+  margin: 0;
+}
+
+.clkarenAboutUsPageBack span {
+  color: #e3b077;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.clkarenAboutUsPageBack h2 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 50px;
+}
+.clkarenAboutUsPageBack p {
+  margin: 10px 0 0 0;
+  font-size: 15px;
+  line-height: 30px;
+}
+.clkarenAboutUsPageBack .backgroundOverlay {
+  background-color: #18162B;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.clkarenAboutUsPageBack .clkarenAboutUs {
+  background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/doctors-discussing-cosmetic-surgery-options-over-a-client-e1632844985630.jpg);
+  background-position: 0px 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0;
+}
+@media screen and (max-width: 480px) {
+  .clkarenAboutUsPageBack .clkarenAboutUs {
+    padding: 80px 0;
+  }
+}
+.clkarenAboutUsPageBack .clkarenAboutUs .aboutUsText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clkarenAboutUsPageBack .clkarenAboutUs .aboutUsText h1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 36px;
+  margin: 0;
+}
+.clkarenAboutUsPageBack .clkarenAboutUsSection {
+  padding: 100px 0 100px 0;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection p {
+  color: rgba(255, 255, 255, 0.703);
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection a {
+  color: #fff;
+  font-size: 20px;
+  background-color: #e3b077;
+  border-radius: 50px;
+  position: relative;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 400;
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection a:hover {
+  transform: translateY(-5px);
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsImg {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsImg {
+    width: 100%;
+  }
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsImg .ChooseUsBackground {
+  background-image: url(img/choose-us.jpg);
+  background-position: 150px 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText {
+  width: 50%;
+  background-color: transparent;
+  background: #18162b;
+  padding: 100px;
+  position: relative;
+  z-index: 5;
+}
+@media screen and (max-width: 768px) {
+  .clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText {
+    width: 100%;
+    text-align: center;
+  }
+  .clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText a {
+    margin: 40px auto 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText {
+    padding: 50px;
+  }
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText .clkarenChooseUsCards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText .clkarenChooseUsCards .clkarenChooseUsCard {
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText .clkarenChooseUsCards .clkarenChooseUsCard {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText .clkarenChooseUsCards .clkarenChooseUsCard {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText .clkarenChooseUsCards .clkarenChooseUsCard {
+    width: 100%;
+  }
+}
+.clkarenAboutUsPageBack .clkarenChooseUsSection .clkarenChooseUsText .clkarenChooseUsCards .clkarenChooseUsCard span {
+  font-size: 30px;
+  display: inline-block;
+  color: white;
+  border: 6px solid white;
+  border-radius: 100%;
+  padding: 40px;
+  font-weight: 500;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection {
+  padding: 100px 0;
+  text-align: center;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection span {
+  font-size: 18px;
+  padding: 10px 0;
+  display: block;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection p {
+  width: 50%;
+  margin: 10px auto;
+}
+@media screen and (max-width: 768px) {
+  .clkarenAboutUsPageBack .clkarenOurDoctorsSection p {
+    width: 80%;
+  }
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard {
+  width: 32%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+@media screen and (max-width: 768px) {
+  .clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard img {
+  display: block;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard .OurDoctorCardText {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  margin: auto;
+  background-color: #18162b;
+  border-radius: 20px;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard .OurDoctorCardText h3 {
+  color: white;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard .OurDoctorCardText span {
+  color: #A3A2AF;
+  padding: 5px 0 20px;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard .OurDoctorCardSocialMedia {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard .OurDoctorCardSocialMedia svg {
+  background-color: #e3b077;
+  padding: 8px;
+  border-radius: 100%;
+  margin: 10px;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.315);
+  top: 100%;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard:hover::before {
+  top: 0;
+  opacity: 100%;
+}
+.clkarenAboutUsPageBack .clkarenOurDoctorsSection .clkarenOurDoctorCards .clkarenOurDoctorCard:hover .OurDoctorCardSocialMedia {
+  top: 40%;
+  opacity: 100%;
+}
+.clkarenAboutUsPageBack .clkarenOurMotiveSection {
+  background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/woman-at-the-plastic-surgeon-e1632844852906.jpg);
+  background-position: 0% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  position: relative;
+  color: white;
+}
+.clkarenAboutUsPageBack .clkarenOurMotiveSection .ourNativeText {
+  position: relative;
+  z-index: 4;
+  text-align: center;
+}
+.clkarenAboutUsPageBack .clkarenOurMotiveSection .ourNativeText svg {
+  fill: white;
+  background-color: #e3b077;
+  border-radius: 100%;
+  padding: 18px;
+}
+.clkarenAboutUsPageBack .clkarenOurMotiveSection .ourNativeText h2 {
+  margin: 20px 0;
+}
+.clkarenAboutUsPageBack .clkarenOurMotiveSection .ourNativeText p {
+  color: white;
+  width: 40%;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .clkarenAboutUsPageBack .clkarenOurMotiveSection .ourNativeText p {
+    width: 80%;
+  }
+}
+.clkarenAboutUsPageBack .clkarenOurMotiveSection .ourNativeText a {
+  color: #fff;
+  font-size: 20px;
+  background-color: #e3b077;
+  border-radius: 50px;
+  position: relative;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 400;
+  width: -moz-max-content;
+  width: max-content;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.clkarenAboutUsPageBack .clkarenOurMotiveSection .ourNativeText a:hover {
+  transform: translateY(-5px);
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection {
+  text-align: center;
+  padding: 100px 0;
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection span {
+  padding: 10px;
+  display: block;
+  font-size: 18px;
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection p {
+  width: 50%;
+  margin: 10px auto 50px auto;
+}
+@media screen and (max-width: 768px) {
+  .clkarenAboutUsPageBack .clkarenOurBlogSection p {
+    width: 80%;
+  }
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a {
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+@media screen and (max-width: 768px) {
+  .clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a {
+    flex-direction: column;
+  }
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .archiveCardImg {
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .archiveCardImg {
+    width: 100%;
+  }
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .archiveCardImg img {
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .cardText {
+  text-align: right;
+  width: 50%;
+  padding-right: 25px;
+}
+@media screen and (max-width: 480px) {
+  .clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .cardText {
+    width: 100%;
+    padding: 0;
+  }
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .cardText h3 {
+  margin: 0.5rem;
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .cardText .archivePostFooter {
+  display: flex;
+  align-items: center;
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .cardText .archivePostFooter svg {
+  fill: #676767;
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .cardText .archivePostFooter span {
+  padding: 0 10px;
+  color: #676767;
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .cardText .readMore {
+  display: flex;
+  align-items: center;
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .cardText .readMore span {
+  color: #e3b077;
+  margin-left: 5px;
+  padding-right: 0;
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .cardText .readMore svg {
+  fill: #e3b077;
+}
+.clkarenAboutUsPageBack .clkarenOurBlogSection .clkarenOurBlog a .cardText p {
+  width: 100%;
+  color: #676767;
+  margin-bottom: 0;
+}
+
+.generalSinglePostStyle .entry-header {
+  background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/enlarging-lips-at-cosmetic-clinic-e1632845241540.jpg);
+  background-position: 0px 52%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  .generalSinglePostStyle .entry-header {
+    padding: 60px 0;
+  }
+}
+.generalSinglePostStyle .entry-header a {
+  color: inherit;
+}
+.generalSinglePostStyle .entry-header .innerHeader {
+  max-width: 1290px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  color: white;
+  z-index: 100;
+}
+.generalSinglePostStyle .entry-header .innerHeader .archivePostFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.generalSinglePostStyle .entry-header .innerHeader .archivePostFooter .innerArchive {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.generalSinglePostStyle .entry-header .innerHeader .archivePostFooter .innerArchive span {
+  color: #A3A2AF;
+}
+.generalSinglePostStyle .entry-header .innerHeader .archivePostFooter .archivePostSvg svg {
+  vertical-align: middle;
+  margin-left: 7px;
+  fill: #e3b077;
+}
+.generalSinglePostStyle .entry-header .backgroundOverlay {
+  background-color: #18162B;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.generalSinglePostStyle .entry-content-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1290px;
+  margin: auto;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content {
+  padding: 100px 0;
+  width: 65%;
+}
+@media screen and (max-width: 768px) {
+  .generalSinglePostStyle .entry-content-parent .entry-content {
+    width: 90%;
+    margin: auto;
+  }
+}
+.generalSinglePostStyle .entry-content-parent .entry-content ul {
+  padding: 0;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content ul li {
+  padding-right: 20px;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content ul li::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ddcd76' width='14' height='14' viewBox='0 0 512 512'%3E%3Cpath d='M172.2 434.6a39.3 39.3 0 0 1-28.1-11.6L22.9 301.9a33.4 33.4 0 1 1 47.2-47.2l102.1 102.2L441.9 87.1a33.4 33.4 0 0 1 47.2 47.2L200.4 423a39.7 39.7 0 0 1-28.2 11.6Z'/%3E%3C/svg%3E");
+  width: 14px;
+  height: 14px;
+  background-color: initial;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content img {
+  border-radius: 20px;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content p .alignleft {
+  width: 49%;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content p .alignright {
+  width: 49%;
+}
+.generalSinglePostStyle .entry-content-parent .entry-content .post-thumbnail img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated {
+  width: 35%;
+  padding: 100px 40px 10px 10px;
+}
+@media screen and (max-width: 768px) {
+  .generalSinglePostStyle .entry-content-parent .generalSinglePopulated {
+    width: 90%;
+    margin: auto;
+    padding: 0;
+  }
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox {
+  position: relative;
+  padding: 40px;
+  border-radius: 20px;
+  background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/cosmetician-holds-syringe-with-injection-of-botox-e1632845065292.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText p {
+  color: white;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText .questionBoxTell, .generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText .questionBoxEmail {
+  margin: 7px 0;
+  display: flex;
+  align-items: center;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText .questionBoxTell svg, .generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .questionBoxText .questionBoxEmail svg {
+  margin-left: 10px;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .questionBox .backgroundOverlay {
+  background-color: #18162b;
+  opacity: 0.85;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .CategoriesBox {
+  box-shadow: 0px 3px 15px 0px rgba(24, 22, 43, 0.1);
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding: 40px;
+  border-radius: 20px;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .CategoriesBox h2 {
+  margin: 0 0 10px 0;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .CategoriesBox a {
+  display: block;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+.generalSinglePostStyle .entry-content-parent .generalSinglePopulated .CategoriesBox a::before {
+  content: url("data:image/svg+xml,%3Csvg height='12' width='12' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 330' fill='%23ddcd76' xml:space='preserve' transform='rotate(90)'%3E%3Cpath d='M325.607 79.393c-5.857-5.857-15.355-5.858-21.213.001l-139.39 139.393L25.607 79.393c-5.857-5.857-15.355-5.858-21.213.001-5.858 5.858-5.858 15.355 0 21.213l150.004 150a14.999 14.999 0 0 0 21.212-.001l149.996-150c5.859-5.857 5.859-15.355.001-21.213z'/%3E%3C/svg%3E");
+  padding-left: 5px;
+}
+
+.commentInner {
+  width: 65%;
+}
+@media screen and (max-width: 768px) {
+  .commentInner {
+    width: 90%;
+    margin: auto;
+  }
+}
+.commentInner textarea {
+  margin-right: 0 !important;
+}
+.commentInner h2 {
+  text-align: center;
+}
+.commentInner .comment-list {
+  background-color: white;
+  padding: 0px 40px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 30px 0px rgba(24, 22, 43, 0.14);
+}
+.commentInner .comment-list li::before {
+  content: none;
+}
+.commentInner .comment-list .comment {
+  padding: 30px 0;
+}
+.commentInner .comment-list .comment .comment-body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.263);
+  padding-bottom: 20px;
+}
+.commentInner .comment-list .comment .comment-body .comment-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.commentInner .comment-list .comment .comment-body .comment-meta .comment-metadata {
+  direction: ltr;
+}
+.commentInner .comment-list .comment .comment-body .comment-meta .comment-metadata a {
+  color: #676767;
+}
+.commentInner .comment-list .comment .comment-body .comment-meta .comment-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.commentInner .comment-list .comment .comment-body .comment-meta .comment-author img {
+  border-radius: 100%;
+  margin: 0 0 5px 20px;
+}
+
+.archiveParent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .archiveParent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .archiveParent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.archiveParent a img {
+  border-radius: 20px;
+}
+.archiveParent a h2 {
+  margin-bottom: 0;
+}
+.archiveParent a .archivePostFooter {
+  display: flex;
+  align-items: center;
+  margin: 5px 0 10px 0;
+}
+.archiveParent a .archivePostFooter svg {
+  margin-left: 5px;
+  stroke: #676767;
+}
+.archiveParent a .readMore {
+  display: flex;
+  align-items: center;
+}
+.archiveParent a .readMore span {
+  color: #e3b077;
+  margin-left: 5px;
+}
+.archiveParent a .readMore svg {
+  fill: #e3b077;
+}
+
+.mainFooterBack {
+  background-color: #18162b;
+  color: white;
+}
+.mainFooterBack .mainView {
+  max-width: 1290px;
+  margin: auto;
+}
+.mainFooterBack .mainFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mainFooterBack .mainFooter .calssFooterColumn1 {
+  width: 29%;
+  padding-left: 49px;
+}
+.mainFooterBack .mainFooter .calssFooterColumn1 p {
+  color: #A3A2AF;
+  font-size: 16px;
+}
+.mainFooterBack .mainFooter .calssFooterColumn1 .socialMedia a {
+  background-color: #e3b077;
+  padding: 7px;
+  margin-left: 12px;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.mainFooterBack .mainFooter .calssFooterColumn1 .socialMedia a svg {
+  display: block;
+  fill: white;
+  vertical-align: middle;
+}
+.mainFooterBack .mainFooter .calssFooterColumn1 .socialMedia a:hover {
+  transform: scale(0.9);
+  background-color: #676767;
+}
+.mainFooterBack .mainFooter .calssFooterColumn1 .socialMedia a:hover svg {
+  fill: #e3b077;
+}
+.mainFooterBack .mainFooter .calssFooterColumn4 {
+  width: 24%;
+  margin-right: 30px;
+}
+@media screen and (max-width: 992px) {
+  .mainFooterBack .mainFooter .calssFooterColumn4 {
+    margin: 0;
+  }
+}
+.mainFooterBack .mainFooter .calssFooterColumn4 .workTime {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 15px;
+}
+.mainFooterBack .mainFooter .calssFooterColumn4 .workTime .workTimeSvg svg {
+  vertical-align: middle;
+  margin-left: 5px;
+  fill: #e3b077;
+}
+.mainFooterBack .mainFooter .calssFooterColumn4 .callUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffe9d1;
+  border-radius: 5px;
+  width: 95%;
+}
+@media screen and (max-width: 992px) {
+  .mainFooterBack .mainFooter .calssFooterColumn4 .callUs {
+    width: 80%;
+  }
+}
+.mainFooterBack .mainFooter .calssFooterColumn4 .callUs h4 {
+  margin: 5px 0 3px 0;
+  font-size: 16px;
+  color: #444444 !important;
+}
+.mainFooterBack .mainFooter .calssFooterColumn4 .callUs P {
+  font-size: 22px;
+  color: #676767 !important;
+  vertical-align: middle;
+}
+.mainFooterBack .mainFooter .calssFooterColumn4 .callUs .callUsSvg svg {
+  vertical-align: middle;
+  padding: 5px;
+  display: block;
+  background-color: #e3b077;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+.mainFooterBack .mainFooter .calssFooterColumn4 p {
+  color: white;
+  margin: 0 !important;
+}
+@media screen and (max-width: 992px) {
+  .mainFooterBack .mainFooter .calssFooterColumn {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainFooterBack .mainFooter .calssFooterColumn {
+    width: 100%;
+  }
+}
+.mainFooterBack .mainFooter .calssFooterColumn h3 {
+  position: relative;
+  font-size: 20px;
+}
+.mainFooterBack .mainFooter .calssFooterColumn h3::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  background-color: #e3b077;
+  top: 49px;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 0;
+}
+.mainFooterBack .mainFooter .calssFooterColumn .footerLi {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.mainFooterBack .mainFooter .calssFooterColumn .footerLi li {
+  padding: 0;
+  margin: 5px 0;
+}
+.mainFooterBack .mainFooter .calssFooterColumn .footerLi li a {
+  transition: 0.3s;
+}
+.mainFooterBack .mainFooter .calssFooterColumn .footerLi li a:hover {
+  color: #e3b077;
+}
+.mainFooterBack .mainFooter .calssFooterColumn .footerLi li::before {
+  content: none;
+}/*# sourceMappingURL=additional.css.map */

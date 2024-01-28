@@ -1,0 +1,989 @@
+@import 'sass/breakpoints';
+@import 'sass/_variables.scss';
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+.blogBreadCrumbs{
+    a , span{
+        font-size: 18px;
+        position: relative;
+        z-index: 3;
+        color: white !important;
+    }
+    span{
+        margin: 7px;
+    }
+}
+.contactPageBack{
+    iframe{
+        width: 100%;
+        height: 410px;
+    }
+    .mainView{
+        max-width: 1290px;
+        margin: auto;
+    }
+    .mainContactUs{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+        .mainContactUsText{
+            padding: 70px 10px 10px 50px;
+            width: 45%;
+            @include sm{
+                width: 100% !important;
+                padding: 70px 10px 10px 10px;
+            }
+            h2{
+                color: $offColor;
+                font-size: 18px;
+                font-weight: 300;
+            }
+            p{
+                color: $textColorLight;
+                font-size: 16px;
+            }
+            h1{
+                font-weight: 700;
+                font-size: 30px;
+            }
+            .information{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                .columnInformation{
+                    width: 50%;
+                    text-align: right;
+                    @include sm{
+                        text-align: center;
+                    }
+                    @include xs{
+                        width: 80%;
+                        text-align: center;
+                    }
+                }
+                h2{
+                    color: $textColorDark;
+                    font-weight: 700;
+                }
+                span{
+                    color: $textColorLight;
+                }
+                .informationSvg{
+                    @include sm{
+                        display: flex;
+                    justify-content: center;
+                    }
+                    svg{
+                        padding: 10px;
+                        border-radius: 5px;
+                        background-color: $offColor;
+                        fill: white;
+                        display: block;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    position: relative;
+                    padding-right: 30px;
+                    margin: 5px 0;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 12PX;
+                        height: 12px;
+                        top: 50%;
+                        border-radius: 100%;
+                        transform: translateY(-50%);
+                        right: 0;
+                        background-color: $offColor;
+                    }
+                }
+            }
+        }
+        .mainContactUsForm{
+            width: 49%;
+            padding: 50px 50px 10px 50px ;
+            margin: -100px 20px 0 0;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 3px 30px 0px rgba(24.00000126050871, 22.000001393193834, 43.0000000000001, 0.14);
+            @include sm{
+                width: 100% !important;
+                margin: 50px 0 0 0;
+            }
+            input[type=email]{
+                direction: rtl;
+            }
+            input[type=submit]{
+                margin-top: 40px;
+                width: 40%;
+                font-size: 18px;
+                @include sm{
+                    // width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.blogHeader{
+    
+    background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/enlarging-lips-at-cosmetic-clinic-e1632845241540.jpg);
+    background-position: 0px 52%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    position: relative;
+    @include xs{
+        padding: 80px 0;
+    }
+    a{
+        color: inherit ;
+    }
+    .innerHeader{
+        max-width: 1290px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        color: white;
+        z-index: 100;
+        .archivePostFooter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .innerArchive{
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+                span{
+                    color: #A3A2AF;
+                    
+                }
+            }
+            .archivePostSvg svg{
+                vertical-align: middle;
+                margin-left: 7px;
+                fill: $offColor;
+            }
+        }
+    }
+    .backgroundOverlay{
+        background-color: #18162B;
+        opacity: 0.8;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .blogHeaderText{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            position: relative;
+            z-index: 2;
+            color: white;
+            font-size: 36px;
+            margin: 0;
+        }
+        
+    }
+    
+}
+.clkarenAboutUsPageBack{
+    span{
+        color: #e3b077;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 10px 0;
+        // display: block;
+    }
+    h2{
+        margin: 0;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    p{
+        margin: 10px 0 0 0;
+        font-size: 15px;
+        line-height: 30px;
+        
+    }
+    .backgroundOverlay{
+        background-color: #18162B;
+        opacity: 0.8;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .clkarenAboutUs{
+        background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/doctors-discussing-cosmetic-surgery-options-over-a-client-e1632844985630.jpg);
+        background-position: 0px 60%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 120px 0;
+        @include xs{
+            padding: 80px 0;
+        }
+        .aboutUsText{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                position: relative;
+                z-index: 2;
+                color: white;
+                font-size: 36px;
+                margin: 0;
+            }
+            
+        }
+        
+    }
+    .clkarenAboutUsSection{
+        padding: 100px 0 100px 0;
+    }
+    .clkarenChooseUsSection{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: white; 
+            p{
+                color: rgba(255, 255, 255, 0.703) ;
+            }
+            a{
+                color: #fff;
+                font-size: 20px;
+                background-color: #e3b077;
+                border-radius: 50px;
+                position: relative;
+                color: #fff;
+                padding: 10px 25px;
+                font-weight: 400;
+                display: block;
+                width: -moz-max-content;
+                width: max-content;
+                transition: all 0.3s;
+                border: none;
+                cursor: pointer;
+                margin-top: 40px;
+                &:hover{
+                    transform: translateY(-5px);
+                }
+            }
+        .clkarenChooseUsImg{
+            width: 50%;
+            @include sm{
+                width: 100%;
+            }
+            .ChooseUsBackground{
+                background-image: url(img/choose-us.jpg);
+                background-position: 150px 40%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        .clkarenChooseUsText{
+            width: 50%;
+            background-color: transparent;
+            background: $mainColorDark;
+            padding: 100px;
+            position: relative;
+            z-index: 5;
+            @include sm{
+                width: 100%;
+                text-align: center;
+                a{
+                    margin: 40px  auto 0;
+                }
+            }
+            @include xs{
+                padding: 50px;
+            }
+            .clkarenChooseUsCards{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                .clkarenChooseUsCard{
+                    width: 50%;
+                    @include md{
+                        width: 100%;
+                    }
+                    @include sm{
+                        width: 50%;
+                    }
+                    @include xs{
+                        width: 100%;
+                    }
+                    span{
+                        font-size: 30px;
+                        display: inline-block;
+                        color: white;
+                        border: 6px solid white;
+                        border-radius: 100%;
+                        padding: 40px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            
+        }
+    }
+    .clkarenOurDoctorsSection{
+        padding: 100px 0;
+        text-align: center;
+        span{
+            font-size: 18px;
+            padding: 10px 0;
+            display: block;
+        }
+        p{
+            width: 50%;
+            margin: 10px auto;
+            @include sm{
+                width: 80%;
+            }
+        }
+        .clkarenOurDoctorCards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 50px;
+            
+            .clkarenOurDoctorCard{
+                width: 32%;
+                position: relative;
+                overflow: hidden;
+                border-radius: 20px;
+                margin: 10px auto;
+                @include sm{
+                    width: 80%;
+                    margin-top: 20px;
+                }
+                img{
+                    display: block;
+                }
+                .OurDoctorCardText{
+                    position: absolute;
+                    bottom: 5%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80%;
+                    margin: auto;
+                    background-color: $mainColorDark;
+                    border-radius: 20px;
+                    h3{
+                        color: white;
+                        margin-bottom: 0;
+                        font-size: 22px;
+                    }
+                    span{
+                        color: #A3A2AF;
+                        padding: 5px 0 20px;
+                    }
+                }
+                .OurDoctorCardSocialMedia{
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    width: 100%;
+                    opacity: 0;
+                    transition: .3s;
+                    svg{
+                        background-color: $offColor;
+                        padding: 8px;
+                        border-radius: 100%;
+                        margin: 10px;
+                    }
+                    &:hover{
+                        
+                    }
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.315);
+                    top: 100%;
+                    right: 0;
+                    opacity: 0;
+                    transition: .5s;
+                }
+                &:hover{
+                    &::before{
+                        top: 0;
+                        opacity: 100%;
+                    }
+                    .OurDoctorCardSocialMedia{
+                        top: 40%;
+                        opacity: 100%;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    .clkarenOurMotiveSection{
+        background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/woman-at-the-plastic-surgeon-e1632844852906.jpg);
+        background-position: 0% 40%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 120px 0;
+        position: relative;
+        color: white;
+        .ourNativeText{
+            position: relative;
+            z-index: 4;
+            text-align: center;
+            svg{
+                fill: white;
+                background-color: $offColor;
+                border-radius: 100%;
+                padding: 18px;
+            }
+            h2{
+                margin: 20px 0;
+            }
+            p{
+                color: white;
+                width: 40%;
+                margin: auto;
+                @include sm{
+                    width: 80%;
+                }
+            }
+            a{
+                color: #fff;
+                font-size: 20px;
+                background-color: #e3b077;
+                border-radius: 50px;
+                position: relative;
+                color: #fff;
+                padding: 10px 25px;
+                font-weight: 400;
+                width: -moz-max-content;
+                width: max-content;
+                transition: all 0.3s;
+                border: none;
+                cursor: pointer;
+                margin-top: 40px;
+                &:hover{
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+    .clkarenOurBlogSection{
+        text-align: center;
+        padding: 100px 0;
+        span{
+            padding: 10px;
+            display: block;
+            font-size: 18px;
+        }
+        p{
+            width: 50%;
+            margin: 10px auto 50px auto;
+            @include sm{
+                width: 80%;
+            }
+        }
+        .clkarenOurBlog{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            a{
+                width: 48%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px auto;
+                @include sm{
+                    width: 90%;
+                }
+                @include xs{
+                    flex-direction: column;
+                }
+                .archiveCardImg{
+                    width: 50%;
+                    @include xs{
+                        width: 100%;
+                    }
+                    img{
+                        height: 240px;
+                        object-fit: cover;
+                        display: block;
+                        border-radius: 20px;
+                    }
+                }
+                .cardText{
+                    text-align: right;
+                    width: 50%;
+                    padding-right: 25px;
+                    @include xs{
+                        width: 100%;
+                        padding: 0;
+                    }
+                    h3{
+                        margin: 0.5rem;
+                    }
+                    .archivePostFooter{
+                        display: flex;
+                        align-items: center;
+                        svg{
+                            fill: $textColorLight;
+                        }
+                        span{
+                            padding: 0 10px;
+                            color: $textColorLight;
+                        }
+                    }
+                    .readMore{
+                        display: flex;
+                        align-items: center;
+                        span{
+                            color: $offColor;
+                            margin-left: 5px;
+                            padding-right: 0;
+                        }
+                        svg{
+                            fill: $offColor;
+                        }
+                    }
+                    p{
+                        width: 100%;
+                        color: $textColorLight;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.generalSinglePostStyle{
+    .entry-header{
+        background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/enlarging-lips-at-cosmetic-clinic-e1632845241540.jpg);
+        background-position: 0px 52%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 120px 0;
+        position: relative;
+        @include xs{
+            padding: 60px 0 ;
+        }
+        a{
+            color: inherit ;
+        }
+        .innerHeader{
+            max-width: 1290px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            color: white;
+            z-index: 100;
+            .archivePostFooter{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .innerArchive{
+                    display: flex;
+                    align-items: center;
+                    padding: 0 20px;
+                    span{
+                        color: #A3A2AF;
+                        
+                    }
+                }
+                .archivePostSvg svg{
+                    vertical-align: middle;
+                    margin-left: 7px;
+                    fill: $offColor;
+                }
+            }
+        }
+        .backgroundOverlay{
+            background-color: #18162B;
+            opacity: 0.8;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+    }
+    .entry-content-parent{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 1290px;
+        margin: auto;
+        .entry-content{
+            padding: 100px 0;
+            width: 65%;
+            @include sm{
+                width: 90%;
+                margin: auto;
+            }
+            ul{
+                padding: 0;
+                li{
+                    padding-right: 20px;
+                    &::before{
+                        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ddcd76' width='14' height='14' viewBox='0 0 512 512'%3E%3Cpath d='M172.2 434.6a39.3 39.3 0 0 1-28.1-11.6L22.9 301.9a33.4 33.4 0 1 1 47.2-47.2l102.1 102.2L441.9 87.1a33.4 33.4 0 0 1 47.2 47.2L200.4 423a39.7 39.7 0 0 1-28.2 11.6Z'/%3E%3C/svg%3E");
+                        width: 14px;
+                        height: 14px;
+                        background-color: initial;
+                    }
+                }
+            }
+            img{
+                border-radius: 20px;
+            }
+            p{
+                .alignleft {
+                    width: 49%;
+                }
+                .alignright {
+                    width: 49%;
+                }
+            }
+            .post-thumbnail{
+                img{
+                    max-width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .generalSinglePopulated{
+            width: 35%;
+            padding: 100px 40px 10px 10px;
+            @include sm{
+                width: 90%;
+                margin: auto;
+                padding: 0;
+            }
+            .questionBox{
+                position: relative;
+                padding: 40px;
+                border-radius: 20px;
+                background-image: url(https://templatekit.jegtheme.com/quinnie/wp-content/uploads/sites/170/2021/09/cosmetician-holds-syringe-with-injection-of-botox-e1632845065292.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                .questionBoxText{
+                    position: relative;
+                    z-index: 3;
+                    color: white;
+                    p{
+                        color: white;
+                    }
+                    .questionBoxTell , .questionBoxEmail{
+                        margin: 7px 0;
+                        display: flex;
+                        align-items: center;
+                        svg{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .backgroundOverlay{
+                    background-color: #18162b;
+                    opacity: 0.85;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                }
+            }
+            .CategoriesBox{
+                box-shadow: 0px 3px 15px 0px rgba(24.00000126050871, 22.000001393193834, 43.0000000000001, 0.1);
+                margin-top: 40px;
+                margin-bottom: 0px;
+                padding: 40px;
+                border-radius: 20px;
+                h2{
+                    margin:  0 0 10px 0;
+                }
+                a{
+                    display: block;
+                    padding: 5px 0;
+                    margin: 5px 0;
+                    &::before{
+                        content: url("data:image/svg+xml,%3Csvg height='12' width='12' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 330' fill='%23ddcd76' xml:space='preserve' transform='rotate(90)'%3E%3Cpath d='M325.607 79.393c-5.857-5.857-15.355-5.858-21.213.001l-139.39 139.393L25.607 79.393c-5.857-5.857-15.355-5.858-21.213.001-5.858 5.858-5.858 15.355 0 21.213l150.004 150a14.999 14.999 0 0 0 21.212-.001l149.996-150c5.859-5.857 5.859-15.355.001-21.213z'/%3E%3C/svg%3E");
+                        padding-left: 5px;
+                    }
+                }
+            }
+        
+        }
+    }
+    
+}
+.commentInner{
+    width: 65% ;
+    @include sm{
+        width: 90%;
+        margin: auto;
+    }
+    textarea{
+        margin-right: 0 !important;
+    }
+    h2{
+        text-align: center;
+    }
+    .comment-list{
+        background-color: white;
+        padding: 0px 40px;
+        border-radius: 20px;
+        box-shadow: 0px 3px 30px 0px rgba(24.00000126050871, 22.000001393193834, 43.0000000000001, 0.14);
+        li{
+            &::before{
+                content: none;
+            }
+        }
+        .comment{
+            padding: 30px 0;
+            
+            .comment-body{
+                border-bottom: 1px solid rgba(0, 0, 0, 0.263);
+                padding-bottom: 20px;
+                .comment-meta{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    .comment-metadata{
+                        direction: ltr;
+                        a{
+                            color: $textColorLight;
+                        }
+                    }
+                    .comment-author{
+                        display: flex;
+                        justify-content: flex-start ;
+                        align-items: center;
+                        img{
+                            border-radius: 100%;
+                            margin: 0 0 5px 20px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+.archiveParent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 100px;
+    @include sm{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include xs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    a{
+        img{
+            border-radius: 20px;
+        }
+        h2{
+            margin-bottom: 0;
+        }
+        .archivePostFooter{
+            display: flex;
+            align-items: center;
+            margin: 5px 0 10px 0;
+            svg{
+                margin-left: 5px;
+                stroke: $textColorLight ;
+            }
+        }
+        .readMore{
+            display: flex;
+            align-items: center;
+            span{
+                color: $offColor;
+                margin-left: 5px;
+            }
+            svg{
+                fill: $offColor;
+            }
+        }
+    }
+}
+.mainFooterBack{
+    background-color: $mainColorDark;
+    color: white;
+    .mainView{
+        max-width: 1290px;
+        margin: auto;
+    }
+    .mainFooter{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .calssFooterColumn1{
+            width: 29%;
+            padding-left: 49px;
+            p{
+                color: #A3A2AF;
+                font-size: 16px;
+            }
+            .socialMedia{
+                a{
+                    background-color: $offColor;
+                    padding: 7px;
+                    margin-left: 12px;
+                    border-radius: 100%;
+                    transition: .3s;
+                    
+                    svg{
+                        display: block;
+                        fill: white ;
+                        vertical-align: middle ;
+                    }
+                    &:hover{
+                        transform: scale(0.9);
+                        background-color: $textColorLight;
+                        svg{
+                          fill: $offColor;  
+                        }
+                    }
+                }
+            }
+        }
+        .calssFooterColumn4{
+            width: 24%;
+            margin-right: 30px;
+            @include md{
+                margin: 0;
+            }
+            .workTime{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 15px;
+                .workTimeSvg svg{
+                    vertical-align: middle;
+                    margin-left: 5px;
+                    fill: $offColor;
+                }
+            }
+            .callUs{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                padding: 10px;
+                background-color: $backColorLight2;
+                border-radius: 5px;
+                width: 95%;
+                @include md{
+                    width: 80% ;
+                }
+                // @include xs{
+                //     width: 60%;
+                // }
+                h4{
+                    margin: 5px 0 3px 0;
+                    font-size: 16px;  
+                    color: $textColorLowSat !important;             
+                }
+                P{
+                    font-size: 22px;                
+                    color: $textColorLight !important;
+                    vertical-align: middle;
+                }
+                .callUsSvg{
+                    svg{
+                        vertical-align: middle;
+                        padding: 5px;
+                        display: block;
+                        background-color: $offColor;
+                        border-radius: 5px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+            p{
+                color: white;
+                margin: 0 !important;
+            }
+        }
+        .calssFooterColumn{
+            @include md {
+                width: 50%;
+            }
+            @include xs{
+                width: 100% ;
+            }
+            h3{
+                position: relative;
+                font-size: 20px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 70px;
+                    height: 1px;
+                    background-color: $offColor;
+                    top: 49px;
+                    bottom: 0;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    right: 0;
+                }
+            }
+            .footerLi{
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                li{
+                    padding: 0;
+                    margin: 5px 0; 
+                    a{
+                        transition: .3s;
+                        &:hover{
+                            color: $offColor;
+                        }
+                    }
+                    &::before{
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}
