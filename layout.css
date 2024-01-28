@@ -65,7 +65,7 @@
 }
 body {
   font-family: danaweb !important;
-  direction: rtl;
+  direction: ltr;
   margin: 0;
   overflow-x: hidden !important;
   width: 100% !important;
@@ -76,7 +76,7 @@ body {
 
 * {
   box-sizing: border-box;
-  direction: rtl;
+  direction: ltr;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
 }
@@ -329,7 +329,7 @@ label {
   display: block;
   margin-bottom: 15px;
   font-size: 13px;
-  text-align: right;
+  text-align: left;
   width: 100%;
   padding-right: 15px;
 }

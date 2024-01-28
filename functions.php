@@ -280,7 +280,7 @@ function karenclinic_scripts() {
 
 	wp_enqueue_style( 'swiper-style', get_template_directory_uri().'/swiper/swiper-bundle.min.css', array(), _S_VERSION );
 
-	wp_style_add_data( 'karenclinic-style', 'rtl', 'replace' );
+	// wp_style_add_data( 'karenclinic-style', 'rtl', 'replace' );
 
 	wp_enqueue_script('jquery');
 

@@ -135,19 +135,12 @@
 		</a>
 
 		<?php
-
 			wp_nav_menu(
-
 			array(
-
 				'theme_location' => 'menu-1',
-
 				'container_class' => 'mainMenu',
-
 			)
-
 			);
-
 		?>
 
 		<a class="menuMobile" href="#">
@@ -171,14 +164,14 @@
 
 		</a>
 
-		<div class="mainMenu">
-			<ul id="menu-main-menu-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-11"><a href="https://karenmed.ir/clinic/" aria-current="page">صفحه اصلی</a></li>
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="https://karenmed.ir/clinic/blog/">مجله</a></li>
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="https://karenmed.ir/clinic/%d8%ae%d8%af%d9%85%d8%aa-%db%8c%da%a9/">خدمات</a></li>
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="https://karenmed.ir/clinic/about/">درباره ما</a></li>
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a href="https://karenmed.ir/clinic/contact/">تماس با ما</a></li>
-			</ul>
-		</div>
+		<?php
+			wp_nav_menu(
+			array(
+				'theme_location' => 'menu-1',
+				'container_class' => 'mainMenu',
+			)
+			);
+		?>
 		<a class="menuMobile">
 
 			<svg width="35" height="35" viewBox="0 0 0.6 0.6" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M.525.425a.025.025 0 0 1 0 .05h-.45a.025.025 0 0 1 0-.05h.45Zm0-.15a.025.025 0 0 1 0 .05h-.45a.025.025 0 0 1 0-.05h.45Zm0-.15a.025.025 0 0 1 0 .05h-.45a.025.025 0 1 1 0-.05h.45Z"></path></svg>
